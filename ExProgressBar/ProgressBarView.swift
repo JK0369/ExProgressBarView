@@ -36,7 +36,7 @@ final class ProgressBarView: UIView {
   
   override init(frame: CGRect) {
     super.init(frame: frame)
-    self.isMultipleTouchEnabled = false
+    self.isUserInteractionEnabled = false
     self.backgroundColor = .systemGray
     self.addSubview(self.progressBarView)
   }
