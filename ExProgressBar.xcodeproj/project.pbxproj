@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38956401361339CA91A55EB7 /* Pods_ExProgressBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF4E54432AAEA2F01F89EB9 /* Pods_ExProgressBar.framework */; };
+		4A03F22327DBA3D300E49835 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03F22227DBA3D300E49835 /* ProgressBarView.swift */; };
 		4A98779627DBA39200F3595A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A98779527DBA39200F3595A /* AppDelegate.swift */; };
 		4A98779827DBA39200F3595A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A98779727DBA39200F3595A /* SceneDelegate.swift */; };
 		4A98779A27DBA39200F3595A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A98779927DBA39200F3595A /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3AF4E54432AAEA2F01F89EB9 /* Pods_ExProgressBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExProgressBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A03F22227DBA3D300E49835 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 		4A98779227DBA39200F3595A /* ExProgressBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExProgressBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A98779527DBA39200F3595A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A98779727DBA39200F3595A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		4A98779E27DBA39400F3595A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A9877A127DBA39400F3595A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A9877A327DBA39400F3595A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D650B1628FCAF0FFD972669D /* Pods-ExProgressBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExProgressBar.debug.xcconfig"; path = "Target Support Files/Pods-ExProgressBar/Pods-ExProgressBar.debug.xcconfig"; sourceTree = "<group>"; };
+		DF901FDAC69C13332B4F7E0D /* Pods-ExProgressBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExProgressBar.release.xcconfig"; path = "Target Support Files/Pods-ExProgressBar/Pods-ExProgressBar.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38956401361339CA91A55EB7 /* Pods_ExProgressBar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		115D216220FF33EEC43DF492 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D650B1628FCAF0FFD972669D /* Pods-ExProgressBar.debug.xcconfig */,
+				DF901FDAC69C13332B4F7E0D /* Pods-ExProgressBar.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4A98778927DBA39200F3595A = {
 			isa = PBXGroup;
 			children = (
 				4A98779427DBA39200F3595A /* ExProgressBar */,
 				4A98779327DBA39200F3595A /* Products */,
+				115D216220FF33EEC43DF492 /* Pods */,
+				9642333D86A953769DE0152B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +77,21 @@
 				4A98779527DBA39200F3595A /* AppDelegate.swift */,
 				4A98779727DBA39200F3595A /* SceneDelegate.swift */,
 				4A98779927DBA39200F3595A /* ViewController.swift */,
+				4A03F22227DBA3D300E49835 /* ProgressBarView.swift */,
 				4A98779B27DBA39200F3595A /* Main.storyboard */,
 				4A98779E27DBA39400F3595A /* Assets.xcassets */,
 				4A9877A027DBA39400F3595A /* LaunchScreen.storyboard */,
 				4A9877A327DBA39400F3595A /* Info.plist */,
 			);
 			path = ExProgressBar;
+			sourceTree = "<group>";
+		};
+		9642333D86A953769DE0152B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AF4E54432AAEA2F01F89EB9 /* Pods_ExProgressBar.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A9877A627DBA39400F3595A /* Build configuration list for PBXNativeTarget "ExProgressBar" */;
 			buildPhases = (
+				0D2A34654073F166236EEDB7 /* [CP] Check Pods Manifest.lock */,
 				4A98778E27DBA39200F3595A /* Sources */,
 				4A98778F27DBA39200F3595A /* Frameworks */,
 				4A98779027DBA39200F3595A /* Resources */,
+				823C7BDA5D95989A4B4BF8BF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +162,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D2A34654073F166236EEDB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExProgressBar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		823C7BDA5D95989A4B4BF8BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExProgressBar/Pods-ExProgressBar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExProgressBar/Pods-ExProgressBar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExProgressBar/Pods-ExProgressBar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4A98778E27DBA39200F3595A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +211,7 @@
 			files = (
 				4A98779A27DBA39200F3595A /* ViewController.swift in Sources */,
 				4A98779627DBA39200F3595A /* AppDelegate.swift in Sources */,
+				4A03F22327DBA3D300E49835 /* ProgressBarView.swift in Sources */,
 				4A98779827DBA39200F3595A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +356,7 @@
 		};
 		4A9877A727DBA39400F3595A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D650B1628FCAF0FFD972669D /* Pods-ExProgressBar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +385,7 @@
 		};
 		4A9877A827DBA39400F3595A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF901FDAC69C13332B4F7E0D /* Pods-ExProgressBar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
